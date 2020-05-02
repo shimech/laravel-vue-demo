@@ -2,3 +2,25 @@ html {
     margin: 12px 120px;
     font-size: 20px;
 }
+
+div {
+    margin: 16px 0;
+}
+
+input {
+    height: 32px;
+    width: 360px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+button {
+    height: 36px;
+    width: 80px;
+    font-size: 1rem;
+}
+
+.info-num {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
