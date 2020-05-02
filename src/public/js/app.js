@@ -2122,9 +2122,20 @@ __webpack_require__.r(__webpack_exports__);
   },
   watch: {
     zipcode: function zipcode(newValue, oldValue) {
-      var apiUrl = "https://zip-cloud.appspot.com/api/search?zipcode=".concat(newValue);
+      var _this = this;
+
+      var apiUrl = "/api/zipcode/".concat(newValue);
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(apiUrl).then(function (response) {
-        console.log(response);
+        var data = JSON.parse(response.data.slice(0, -1));
+
+        if (data.status === 200) {
+          var result = data.results[0];
+          _this.prefecture = result.address1;
+          _this.city = result.address2;
+          _this.town = result.address3;
+        }
+
+        console.log(data);
       })["catch"](function (error) {
         console.log(error.response);
       });

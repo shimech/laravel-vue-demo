@@ -52,11 +52,18 @@ export default {
   },
   watch: {
     zipcode(newValue, oldValue) {
-      const apiUrl = `https://zip-cloud.appspot.com/api/search?zipcode=${newValue}`;
+      const apiUrl = `/api/zipcode/${newValue}`;
       axios
         .get(apiUrl)
         .then(response => {
-          console.log(response);
+          const data = JSON.parse(response.data.slice(0, -1));
+          if (data.status === 200) {
+            const result = data.results[0];
+            this.prefecture = result.address1;
+            this.city = result.address2;
+            this.town = result.address3;
+          }
+          console.log(data);
         })
         .catch(error => {
           console.log(error.response);
