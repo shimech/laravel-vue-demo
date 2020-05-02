@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.home');
+});
+
+Route::get('/vuex', function () {
+    return view('pages.vuex');
 });
