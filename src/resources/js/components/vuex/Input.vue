@@ -39,11 +39,16 @@
           </label>
         </div>
       </div>
-      <div class="next-button">
-        <router-link to="/vuex/check">
-          <button @click="printStoreState">次へ</button>
-        </router-link>
-      </div>
+    </div>
+    <div class="next-button">
+      <router-link to="/vuex/check">
+        <button @click="printStoreState">次へ</button>
+      </router-link>
+    </div>
+    <div class="home-button">
+      <a href="/">
+        <button>ホームへ戻る</button>
+      </a>
     </div>
   </div>
 </template>
@@ -88,5 +93,9 @@ export default {
 
 .email-control {
   display: inline-block;
+}
+
+.home-button button {
+  width: 240px;
 }
 </style>
