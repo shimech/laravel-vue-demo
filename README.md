@@ -10,3 +10,29 @@
 - macOS Catalina 10.15.4
 - PHP 7.4.5
 - Laravel 7.9.2
+
+## コマンド一覧
+
+### パッケージのインストール
+
+```shell
+$ make install
+```
+
+### サーバの起動
+
+```shell
+$ make start
+```
+
+### リソース (js, css)のビルド
+
+```shell
+$ make build
+```
+
+### リソースのウォッチ
+
+```shell
+$ make watch
+```
