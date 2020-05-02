@@ -7,8 +7,8 @@ import router from "./router";
 
 window.Vue = Vue;
 
-const app = new Vue({
-    el: "#app",
+const appVuex = new Vue({
+    el: "#app-vuex",
     store: store,
     router: router
 });
