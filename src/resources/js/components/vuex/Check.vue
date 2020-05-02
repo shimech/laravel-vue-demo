@@ -21,6 +21,11 @@
         <button>戻る</button>
       </router-link>
     </div>
+    <div class="home-button">
+      <a href="/">
+        <button>ホームへ戻る</button>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -33,3 +38,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.home-button button {
+  width: 240px;
+}
+</style>
