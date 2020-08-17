@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/vuex', function () {
     return view('pages.vuex');
 });
+
+Route::get('/zipcode', function () {
+    return view('pages.zipcode');
+});

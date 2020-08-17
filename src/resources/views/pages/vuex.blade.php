@@ -5,9 +5,10 @@
 @section('header-text', 'Vuex')
 
 @section('main')
-<div id="app">
+<div id="app-vuex">
     <router-view></router-view>
 </div>
+<div id="app-zipcode" disabled></div>
 @endsection
 
 @section('script')
