@@ -17,7 +17,9 @@
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.26.10",
         "sass-loader": "^8.0.0",
-        "vue-template-compiler": "^2.6.11"
+        "vue-template-compiler": "^2.6.11",
+        "node-forge": ">=0.10.0",
+        "http-proxy": ">=1.10.1"
     },
     "dependencies": {
         "serialize-javascript": "^4.0.0",
