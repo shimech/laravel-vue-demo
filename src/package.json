@@ -23,10 +23,15 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
+        "is-svg": "^4.3.1",
+        "node-notifier": "^10.0.0",
+        "postcss": "^8.3.0",
         "serialize-javascript": "^4.0.0",
+        "ssri": "^8.0.1",
         "vue": "^2.6.11",
         "vue-router": "^3.4.3",
-        "vuex": "^3.5.1"
+        "vuex": "^3.5.1",
+        "ws": "^7.4.6"
     },
     "name": "src"
 }
